@@ -3,8 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="title">Выбери своего героя</h1>
+      <div class="filter">
+        <select name="gender" id="gender-select" class="gender">
+          <option value="">--Выберите пол--</option>
+          <option value="male">Мужчина</option>
+          <option value="female">Женщина</option>
+        </select>
+        <label
+          ><input type="checkbox" value="human" class="isHuman" />
+          Человек</label
+        >
+        <label
+          ><input type="checkbox" value="alive" class="isAlive" /> Жив</label
+        >
+        <label
+          ><input
+            type="range"
+            class="filmsCount"
+            min="0"
+            max="8"
+            step="1"
+            value="0"
+          />
+          Кол-во фильмов</label
+        >
+        <button class="btn-search">Искать</button>
+        <button class="btn-show-all">Показать всех</button>
+      </div>
+    </header>
+    <main class="main">
+      <div class="cards">
+        <!-- <div class="hero-card">
+          <img
+            src="./../dbimage/AntMan-EndgameProfile.jpg"
+            class="photo"
+            alt=""
+          />
+          <div class="stats name">
+            Name
+            <div>Ant-Man</div>
+          </div>
+          <div class="stats real-name">
+            Real-name
+            <div>Scott Edward Harris Lang</div>
+          </div>
+          <div class="stats species">
+            Species
+            <div>human</div>
+          </div>
+          <div class="stats citizenship">
+            Citizenship
+            <div>American</div>
+          </div>
+          <div class="stats gender">
+            Gender
+            <div>male</div>
+          </div>
+          <div class="stats status">
+            Status
+            <div>alive</div>
+          </div>
+          <div class="stats actors">
+            Actors
+            <div>Paul Rudd</div>
+          </div>
+          <div class="stats films">
+            Movies
+            <ul class="films-list">
+              <li class="film-item">Ant-Man</li>
+              <li class="film-item">Captain America: Civil War</li>
+              <li class="film-item">Ant-Man and the Wasp</li>
+              <li class="film-item">Avengers: Endgame</li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </main>
+  </body>
 </html>

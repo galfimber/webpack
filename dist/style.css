@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./../kosmos-art-tumannosti-ogni.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.header {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.title {
+  font-size: 60px;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  font-size: 24px;
+}
+button{
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+}
+.main {
+  margin-top: 50px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+.hero-card {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 10px;
+  border: 2px solid rgb(77, 77, 77);
+  border-radius: 10px;
+  background-color: rgb(160, 160, 160);
+}
+.photo {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.film-item {
+  margin-left: 20px;
+}
+.stats {
+  font-size: 20px;
+  font-weight: bold;
+}
+.stats > div {
+  font-weight: normal;
+}
